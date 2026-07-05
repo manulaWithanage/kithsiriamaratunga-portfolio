@@ -1,5 +1,5 @@
-import React from 'react';
-import { Mail, ArrowRight, Award } from 'lucide-react';
+import { ArrowRight, Award } from 'lucide-react';
+import { FaLinkedin } from 'react-icons/fa';
 import './Hero.css';
 import heroImg from '../assets/hero.jpg';
 
@@ -25,13 +25,16 @@ const Hero = () => {
           </div>
 
           <div className="hero-action-buttons">
-            <a href="#services" className="btn-dark">
-              <span>EXPLORE SERVICES</span>
+            <a href="mailto:kithshya@gmail.com" className="btn-dark">
+              <span>CONTACT ME</span>
               <ArrowRight size={16} />
             </a>
-            <a href="mailto:kithshya@gmail.com" className="btn-light">
-              <Mail size={16} />
-              <span>CONTACT ME</span>
+            <a href="#services" className="btn-light">
+              <span>EXPLORE SERVICES</span>
+            </a>
+            <a href="https://www.linkedin.com/in/kithsiri-amaratunga-694525202/" target="_blank" rel="noopener noreferrer" className="btn-linkedin">
+              <FaLinkedin size={18} />
+              <span>LINKEDIN</span>
             </a>
           </div>
 

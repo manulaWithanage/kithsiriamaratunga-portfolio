@@ -120,6 +120,28 @@
   transform: translateY(-2px);
 }
 
+.btn-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.95rem 2rem;
+  background-color: white;
+  color: #0077b5;
+  border: 1px solid rgba(0, 119, 181, 0.2);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.btn-linkedin:hover {
+  background-color: rgba(0, 119, 181, 0.04);
+  border-color: #0077b5;
+  transform: translateY(-2px);
+}
+
 /* Core Competencies */
 .hero-competencies {
   width: 100%;
@@ -295,7 +317,8 @@
   }
   
   .btn-dark,
-  .btn-light {
+  .btn-light,
+  .btn-linkedin {
     width: 100%;
     justify-content: center;
   }
