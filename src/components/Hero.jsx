@@ -36,7 +36,7 @@ const Hero = () => {
           </a>
           <div className="social-link-item location-item">
             <MapPin size={18} />
-            <span>Urapola, Sri Lanka</span>
+            <span>Sri Lanka</span>
           </div>
         </div>
 
