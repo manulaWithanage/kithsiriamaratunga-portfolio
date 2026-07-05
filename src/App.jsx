@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './components/Header';
 import Hero from './components/Hero';
 import Profile from './components/Profile';
 import Services from './components/Services';
@@ -8,7 +9,8 @@ import './App.css';
 function App() {
   return (
     <div className="app-container">
-      <main>
+      <Header />
+      <main style={{ marginTop: '80px' }}>
         <Hero />
         <Profile />
         <Services />
