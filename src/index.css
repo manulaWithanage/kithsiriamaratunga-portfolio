@@ -10,10 +10,10 @@
   --text-secondary: #475569;
   --text-muted: #64748b;
   
-  /* Orange Accent matching the reference */
-  --accent-primary: #f97316;
-  --accent-primary-hover: #ea580c;
-  --accent-secondary: #ffedd5;
+  /* Premium Academic Blue Theme Palette */
+  --accent-primary: #2563eb;
+  --accent-primary-hover: #1d4ed8;
+  --accent-secondary: #dbeafe;
   
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.02);
   --shadow-md: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
@@ -117,7 +117,7 @@ button {
 .glass-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(249, 115, 22, 0.15);
+  border-color: rgba(37, 99, 235, 0.15);
 }
 
 /* Utilities */

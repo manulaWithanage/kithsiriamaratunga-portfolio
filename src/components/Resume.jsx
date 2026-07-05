@@ -101,21 +101,37 @@ const Resume = () => {
               <BookOpen size={24} /> Selected Publications
             </h3>
             <ul className="publication-list">
-              <li>
-                <span className="pub-title">Words Epitomizing Leadership: Voice of Major General Milinda Peiris as Vice Chancellor of General Sir John Kotelawala Defence University</span>
-                <span className="pub-meta">Amaratunga, Kithsiri. Colombo, 2016. (Book)</span>
+              <li className="publication-item">
+                <div className="pub-header">
+                  <span className="pub-category">Book</span>
+                  <span className="pub-date">2016</span>
+                </div>
+                <h4 className="pub-title">Words Epitomizing Leadership: Voice of Major General Milinda Peiris as Vice Chancellor of General Sir John Kotelawala Defence University</h4>
+                <p className="pub-meta">Amaratunga, Kithsiri. Colombo, 2016.</p>
               </li>
-              <li>
-                <span className="pub-title">Rasakevili Velenda</span>
-                <span className="pub-meta">Sinhala translation of R. K. Narayan’s novel 'The Vendor of Sweets'. (Book Translation)</span>
+              <li className="publication-item">
+                <div className="pub-header">
+                  <span className="pub-category">Book Translation</span>
+                  <span className="pub-date">Published</span>
+                </div>
+                <h4 className="pub-title">Rasakevili Velenda</h4>
+                <p className="pub-meta">Sinhala translation of R. K. Narayan’s novel 'The Vendor of Sweets'.</p>
               </li>
-              <li>
-                <span className="pub-title">The Buddhist Perspective of Interpretivism as a Philosophical Base for Social Science Research</span>
-                <span className="pub-meta">International Journal of Science and Research, 2019. (Journal Article)</span>
+              <li className="publication-item">
+                <div className="pub-header">
+                  <span className="pub-category">Journal Article</span>
+                  <span className="pub-date">2019</span>
+                </div>
+                <h4 className="pub-title">The Buddhist Perspective of Interpretivism as a Philosophical Base for Social Science Research</h4>
+                <p className="pub-meta">Published in the <em>International Journal of Science and Research</em>.</p>
               </li>
-              <li>
-                <span className="pub-title">Pluralism: Research Methodology for Social Sciences</span>
-                <span className="pub-meta">International Journal of Science and Research, 2018. (Journal Article)</span>
+              <li className="publication-item">
+                <div className="pub-header">
+                  <span className="pub-category">Journal Article</span>
+                  <span className="pub-date">2018</span>
+                </div>
+                <h4 className="pub-title">Pluralism: Research Methodology for Social Sciences</h4>
+                <p className="pub-meta">Published in the <em>International Journal of Science and Research</em>.</p>
               </li>
             </ul>
           </div>
