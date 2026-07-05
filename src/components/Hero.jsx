@@ -29,12 +29,13 @@ const Hero = () => {
               <span>CONTACT ME</span>
               <ArrowRight size={16} />
             </a>
-            <a href="#services" className="btn-light">
-              <span>EXPLORE SERVICES</span>
-            </a>
-            <a href="https://www.linkedin.com/in/kithsiri-amaratunga-694525202/" target="_blank" rel="noopener noreferrer" className="btn-linkedin">
+            <a href="https://www.linkedin.com/in/kithsiri-amaratunga-694525202/" target="_blank" rel="noopener noreferrer" className="btn-light">
               <FaLinkedin size={18} />
               <span>LINKEDIN</span>
+            </a>
+            <a href="#services" className="link-text-btn">
+              <span>Explore Services</span>
+              <ArrowRight size={16} />
             </a>
           </div>
 

@@ -120,26 +120,30 @@
   transform: translateY(-2px);
 }
 
-.btn-linkedin {
+.link-text-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  padding: 0.95rem 2rem;
-  background-color: white;
-  color: #0077b5;
-  border: 1px solid rgba(0, 119, 181, 0.2);
-  border-radius: var(--radius-full);
+  gap: 0.5rem;
+  padding: 0.95rem 1.5rem;
+  color: var(--text-primary);
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
-  box-shadow: var(--shadow-sm);
   transition: all var(--transition-fast);
 }
 
-.btn-linkedin:hover {
-  background-color: rgba(0, 119, 181, 0.04);
-  border-color: #0077b5;
-  transform: translateY(-2px);
+.link-text-btn:hover {
+  color: var(--accent-primary);
+  transform: translateX(4px);
+}
+
+.link-text-btn svg {
+  color: var(--accent-primary);
+  transition: transform var(--transition-fast);
+}
+
+.link-text-btn:hover svg {
+  transform: translateX(2px);
 }
 
 /* Core Competencies */
@@ -317,9 +321,14 @@
   }
   
   .btn-dark,
-  .btn-light,
-  .btn-linkedin {
+  .btn-light {
     width: 100%;
     justify-content: center;
+  }
+
+  .link-text-btn {
+    width: auto;
+    align-self: center;
+    margin-top: 0.5rem;
   }
 }
