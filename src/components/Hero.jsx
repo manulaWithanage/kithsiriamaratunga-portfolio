@@ -2,7 +2,7 @@ import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { FaLinkedin } from 'react-icons/fa';
 import './Hero.css';
-import heroImg from '../assets/hero.png';
+import heroImg from '../assets/hero.jpg';
 
 const Hero = () => {
   return (
