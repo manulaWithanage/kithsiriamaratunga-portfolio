@@ -1,7 +1,7 @@
 import { ArrowRight, Award } from 'lucide-react';
 import { FaLinkedin } from 'react-icons/fa';
 import './Hero.css';
-import heroImg from '../assets/hero.jpg';
+import heroImg from '../assets/hero.png';
 
 const Hero = () => {
   return (
