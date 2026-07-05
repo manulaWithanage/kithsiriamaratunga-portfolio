@@ -171,16 +171,18 @@
 
 .competency-card {
   padding: 1.25rem;
-  background-color: var(--bg-primary);
-  border: 1px solid rgba(15, 23, 42, 0.06);
+  background-color: var(--bg-secondary);
+  border: 1px solid rgba(15, 23, 42, 0.04);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-fast);
 }
 
 .competency-card:hover {
+  background-color: var(--bg-primary);
   border-color: rgba(249, 115, 22, 0.15);
   box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 .competency-card h4 {
