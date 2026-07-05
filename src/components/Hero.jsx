@@ -83,24 +83,6 @@ const Hero = () => {
             <div className="image-frame">
               <img src={heroImg} alt="Kithsiri Amaratunga" className="hero-image" />
             </div>
-
-            {/* Floating Glass Badge 1: Credentials */}
-            <div className="floating-badge badge-top-left">
-              <span className="floating-badge-icon">🎓</span>
-              <div>
-                <h5>MPhil, MA, BA</h5>
-                <p>English & Linguistics</p>
-              </div>
-            </div>
-
-            {/* Floating Glass Badge 2: Experience */}
-            <div className="floating-badge badge-bottom-right">
-              <span className="floating-badge-icon">✍️</span>
-              <div>
-                <h5>30+ Years</h5>
-                <p>Academic Excellence</p>
-              </div>
-            </div>
           </div>
         </div>
 

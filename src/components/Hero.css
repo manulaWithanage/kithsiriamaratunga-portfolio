@@ -267,6 +267,26 @@
     0 0 0 1px rgba(15, 23, 42, 0.05);
   background: white;
   padding: 8px;
+  position: relative;
+}
+
+/* Elegant offset backplate */
+.image-frame::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: -15px;
+  bottom: -15px;
+  background-color: var(--accent-primary);
+  border-radius: 24px;
+  z-index: -1;
+  opacity: 0.08;
+  transition: transform var(--transition-normal);
+}
+
+.image-frame:hover::before {
+  transform: translate(5px, 5px);
 }
 
 .hero-image {
@@ -274,63 +294,6 @@
   height: 100%;
   object-fit: cover;
   border-radius: 18px;
-}
-
-/* Floating Badges */
-.floating-badge {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.85rem 1.25rem;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 16px;
-  box-shadow: 
-    0 20px 25px -5px rgba(15, 23, 42, 0.1),
-    0 10px 10px -5px rgba(15, 23, 42, 0.04);
-  z-index: 2;
-  transition: transform var(--transition-normal);
-}
-
-.floating-badge:hover {
-  transform: scale(1.05);
-}
-
-.floating-badge-icon {
-  font-size: 1.25rem;
-  background: white;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.floating-badge h5 {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #0f172a;
-}
-
-.floating-badge p {
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  font-weight: 500;
-}
-
-.badge-top-left {
-  top: 10%;
-  left: -15%;
-}
-
-.badge-bottom-right {
-  bottom: 10%;
-  right: -15%;
 }
 
 /* Responsive adjustments */
@@ -341,14 +304,6 @@
   
   .hero-title {
     font-size: 3.8rem;
-  }
-  
-  .badge-top-left {
-    left: -8%;
-  }
-
-  .badge-bottom-right {
-    right: -8%;
   }
 }
 
@@ -379,14 +334,6 @@
   .image-frame-container {
     max-width: 320px;
   }
-
-  .badge-top-left {
-    left: -12%;
-  }
-
-  .badge-bottom-right {
-    right: -12%;
-  }
 }
 
 @media (max-width: 576px) {
@@ -397,19 +344,5 @@
   .hero-highlights {
     grid-template-columns: 1fr;
     gap: 1rem;
-  }
-
-  .floating-badge {
-    padding: 0.6rem 1rem;
-  }
-  
-  .badge-top-left {
-    left: -5%;
-    top: 5%;
-  }
-
-  .badge-bottom-right {
-    right: -5%;
-    bottom: 5%;
   }
 }
